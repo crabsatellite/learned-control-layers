@@ -1,0 +1,100 @@
+{
+  "metadata": {
+    "date": "2026-03-07T09:49:03.419103",
+    "description": "Scale experiment: PPO 100K on v200/v500 + zero-shot transfer from 500K model",
+    "seed": 42,
+    "timesteps": 100000,
+    "checkpoint_interval": 1000,
+    "max_steps": 50
+  },
+  "per_size": {
+    "200": {
+      "size": 200,
+      "timeout": 10.0,
+      "seed": 42,
+      "timesteps": 100000,
+      "train_time": 286.06581115722656,
+      "n_episodes": 2007,
+      "ppo_costs": [
+        1152.0,
+        1136.0,
+        1585.0,
+        1327.0,
+        898.0
+      ],
+      "ppo_mean": 1219.6,
+      "random_costs": [
+        1510.0,
+        965.0,
+        1427.0,
+        1346.0,
+        1231.0
+      ],
+      "random_mean": 1295.8,
+      "diff": 76.20000000000005,
+      "diff_pct": 5.880537119925918,
+      "mann_whitney_p": 0.27380952380952384,
+      "wilcoxon_p": 0.3125,
+      "transfer_costs": [
+        1154.0,
+        772.0,
+        1223.0,
+        1004.0,
+        755.0
+      ],
+      "transfer_mean": 981.6
+    },
+    "500": {
+      "size": 500,
+      "timeout": 30.0,
+      "seed": 42,
+      "timesteps": 100000,
+      "train_time": 169.56566190719604,
+      "n_episodes": 2007,
+      "ppo_costs": [
+        3119.0,
+        3327.0,
+        3153.0,
+        3315.0,
+        2357.0
+      ],
+      "ppo_mean": 3054.2,
+      "random_costs": [
+        3172.0,
+        3327.0,
+        2703.0,
+        3699.0,
+        3692.0
+      ],
+      "random_mean": 3318.6,
+      "diff": 264.4000000000001,
+      "diff_pct": 7.9672150907009005,
+      "mann_whitney_p": 0.12457631929096341,
+      "wilcoxon_p": 0.3125,
+      "transfer_costs": [
+        2082.0,
+        2053.0,
+        2148.0,
+        2156.0,
+        1946.0
+      ],
+      "transfer_mean": 2077.0
+    }
+  },
+  "summary": {
+    "v200": {
+      "ppo_100k_mean": 1219.6,
+      "random_mean": 1295.8,
+      "transfer_500k_mean": 981.6,
+      "ppo_vs_random_pct": 5.880537119925918,
+      "mann_whitney_p": 0.27380952380952384
+    },
+    "v500": {
+      "ppo_100k_mean": 3054.2,
+      "random_mean": 3318.6,
+      "transfer_500k_mean": 2077.0,
+      "ppo_vs_random_pct": 7.9672150907009005,
+      "mann_whitney_p": 0.12457631929096341
+    }
+  }
+}

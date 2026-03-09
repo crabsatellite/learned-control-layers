@@ -1,0 +1,898 @@
+{
+  "metadata": {
+    "date": "2026-03-07T13:26:50.841346",
+    "model": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/results/ppo_csolver_500k/model_seed42",
+    "n_instances": 30,
+    "clause_range": [
+      100,
+      1000
+    ],
+    "timeout": 10.0,
+    "checkpoint_interval": 1000
+  },
+  "instances": [
+    {
+      "name": "00f4ea994d22...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE22Big/00f4ea994d224e5975fa39443357a58d90fffc51b073e8d62a7b6b8a06a1ef03.wcnf",
+      "source": "MSE22Big",
+      "n_clauses": 272,
+      "category": "INTERESTING",
+      "ppo": {
+        "initial_cost": 1700549171645231.0,
+        "best_cost": 808221255154562.0,
+        "improvement": 892327916490669.0,
+        "improvement_pct": 52.47292647394419,
+        "total_reward": 0.6112111903482812,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 1700549171645231.0,
+        "best_cost": 994704671455840.0,
+        "improvement": 705844500189391.0,
+        "improvement_pct": 41.50685625317775,
+        "total_reward": -0.3847087309860334,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      }
+    },
+    {
+      "name": "0ed499e9b4e9...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE22Big/0ed499e9b4e9739e16df44110a74c8d00677754621401b094538fc3a9b527a73.wcnf",
+      "source": "MSE22Big",
+      "n_clauses": 285,
+      "category": "INTERESTING",
+      "ppo": {
+        "initial_cost": 59.0,
+        "best_cost": 41.0,
+        "improvement": 18.0,
+        "improvement_pct": 30.508474576271187,
+        "total_reward": 0.5171140517165357,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 59.0,
+        "best_cost": 41.0,
+        "improvement": 18.0,
+        "improvement_pct": 30.508474576271187,
+        "total_reward": -0.36288594828346465,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      }
+    },
+    {
+      "name": "23c935de1ad8...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE22Big/23c935de1ad862d08450aedd018e13b0c9f6df1c7a290dfddfc0b818a4c7cb5a.wcnf",
+      "source": "MSE22Big",
+      "n_clauses": 350,
+      "category": "TRIVIAL",
+      "ppo": {
+        "initial_cost": 1.0,
+        "best_cost": 0.0,
+        "improvement": 1.0,
+        "improvement_pct": 100.0,
+        "total_reward": 0.04,
+        "steps": 2,
+        "trivial": true,
+        "no_progress": false,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 1.0,
+        "best_cost": 0.0,
+        "improvement": 1.0,
+        "improvement_pct": 100.0,
+        "total_reward": 0.02,
+        "steps": 3,
+        "trivial": true,
+        "no_progress": false,
+        "error": null
+      }
+    },
+    {
+      "name": "2e884e036634...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE22Big/2e884e036634550cba535cff5f8fc0c5bdddad427569e862fb71cb88af7a5150.wcnf",
+      "source": "MSE22Big",
+      "n_clauses": 276,
+      "category": "INTERESTING",
+      "ppo": {
+        "initial_cost": 1272057849.0,
+        "best_cost": 1051338231.0,
+        "improvement": 220719618.0,
+        "improvement_pct": 17.351382106836873,
+        "total_reward": 0.499090487357648,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 1272057849.0,
+        "best_cost": 1051338238.0,
+        "improvement": 220719611.0,
+        "improvement_pct": 17.351381556547434,
+        "total_reward": -0.44090951295995445,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      }
+    },
+    {
+      "name": "41a8f8ea9018...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE22Big/41a8f8ea9018f9634de7e386143e1b60296f2364bec2a7e081a65f6bb1544649.wcnf",
+      "source": "MSE22Big",
+      "n_clauses": 436,
+      "category": "INTERESTING",
+      "ppo": {
+        "initial_cost": 49334.0,
+        "best_cost": 7727.0,
+        "improvement": 41607.0,
+        "improvement_pct": 84.33737381927271,
+        "total_reward": 0.9315451538239399,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 49334.0,
+        "best_cost": 8742.0,
+        "improvement": 40592.0,
+        "improvement_pct": 82.27996918960555,
+        "total_reward": -0.14987432059517486,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      }
+    },
+    {
+      "name": "51d10addb508...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE22Big/51d10addb5086760fe1382e32684ac276e5016294c0091d9920dd5d2c3b9079f.wcnf",
+      "source": "MSE22Big",
+      "n_clauses": 706,
+      "category": "INTERESTING",
+      "ppo": {
+        "initial_cost": 5241207921738573.0,
+        "best_cost": 415622603409442.0,
+        "improvement": 4825585318329131.0,
+        "improvement_pct": 92.0700989234639,
+        "total_reward": -0.23997633291321357,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 5241207921738573.0,
+        "best_cost": 415622603409442.0,
+        "improvement": 4825585318329131.0,
+        "improvement_pct": 92.0700989234639,
+        "total_reward": -0.3299763329132136,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      }
+    },
+    {
+      "name": "611ca1906810...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE22Big/611ca190681062d0765aea224eaba629576b674d4dbc833a827274d2a04e5a90.wcnf",
+      "source": "MSE22Big",
+      "n_clauses": 344,
+      "category": "INTERESTING",
+      "ppo": {
+        "initial_cost": 376148122634823.0,
+        "best_cost": -6.995912180826384e+18,
+        "improvement": 6.99628832894902e+18,
+        "improvement_pct": 1859982.2537839026,
+        "total_reward": 0.9299999999999999,
+        "steps": 22,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 376148122634823.0,
+        "best_cost": -6.994791747431412e+18,
+        "improvement": 6.995167895554047e+18,
+        "improvement_pct": 1859684.3835228141,
+        "total_reward": 0.77,
+        "steps": 32,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      }
+    },
+    {
+      "name": "7183eef3daab...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE22Big/7183eef3daabc74df198c45e7c26e6ddc19f21cb5124ea0b9043b2d18b7f7eb2.wcnf",
+      "source": "MSE22Big",
+      "n_clauses": 162,
+      "category": "NO_PROGRESS",
+      "ppo": {
+        "initial_cost": 7.125965231945594e+17,
+        "best_cost": 7.125965231945594e+17,
+        "improvement": 0.0,
+        "improvement_pct": 0.0,
+        "total_reward": -0.2900000000000001,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": true,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 7.125965231945594e+17,
+        "best_cost": 7.125965231945594e+17,
+        "improvement": 0.0,
+        "improvement_pct": 0.0,
+        "total_reward": -0.3500000000000002,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": true,
+        "error": null
+      }
+    },
+    {
+      "name": "7e0e95a328b3...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE22Big/7e0e95a328b39b0e15333e2541e0d9b12e9411a4a3bea51e5b0f41ed7696806f.wcnf",
+      "source": "MSE22Big",
+      "n_clauses": 280,
+      "category": "INTERESTING",
+      "ppo": {
+        "initial_cost": 53.0,
+        "best_cost": 45.0,
+        "improvement": 8.0,
+        "improvement_pct": 15.09433962264151,
+        "total_reward": 0.4001963628341114,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 53.0,
+        "best_cost": 46.0,
+        "improvement": 7.0,
+        "improvement_pct": 13.20754716981132,
+        "total_reward": -0.36519503632164296,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      }
+    },
+    {
+      "name": "873f8b4decb6...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE22Big/873f8b4decb62b016a3292a4dc7ac8a346c0ec998b861be750a8cc4d66499a37.wcnf",
+      "source": "MSE22Big",
+      "n_clauses": 233,
+      "category": "INTERESTING",
+      "ppo": {
+        "initial_cost": 3.5282578624269164e+18,
+        "best_cost": 1.351811942501475e+18,
+        "improvement": 2.1764459199254413e+18,
+        "improvement_pct": 61.68613533332766,
+        "total_reward": 0.3524635494900064,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 3.5282578624269164e+18,
+        "best_cost": 1.352600634341216e+18,
+        "improvement": 2.1756572280857004e+18,
+        "improvement_pct": 61.66378175627935,
+        "total_reward": -0.42755010771811386,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      }
+    },
+    {
+      "name": "95a9f7631473...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE22Big/95a9f7631473243ea943ddf21ae9486b4423a1cae55d6f3f8ee19ec43eb89be8.wcnf",
+      "source": "MSE22Big",
+      "n_clauses": 205,
+      "category": "TRIVIAL",
+      "ppo": {
+        "initial_cost": 1.0,
+        "best_cost": 0.0,
+        "improvement": 1.0,
+        "improvement_pct": 100.0,
+        "total_reward": -1.4900000000000004,
+        "steps": 50,
+        "trivial": true,
+        "no_progress": false,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 1.0,
+        "best_cost": 0.0,
+        "improvement": 1.0,
+        "improvement_pct": 100.0,
+        "total_reward": -1.4900000000000004,
+        "steps": 50,
+        "trivial": true,
+        "no_progress": false,
+        "error": null
+      }
+    },
+    {
+      "name": "a663ad8705ca...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE22Big/a663ad8705cab3ef428f11f23e1caeae87fe4284c8eb966fc9e6843616bb461a.wcnf",
+      "source": "MSE22Big",
+      "n_clauses": 272,
+      "category": "INTERESTING",
+      "ppo": {
+        "initial_cost": 2.4603594796209786e+17,
+        "best_cost": 1.4580580404216544e+17,
+        "improvement": 1.0023014391993242e+17,
+        "improvement_pct": 40.73800790093202,
+        "total_reward": 0.8230655955658861,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 2.4603594796209786e+17,
+        "best_cost": 1.522959712456208e+17,
+        "improvement": 9.373997671647706e+16,
+        "improvement_pct": 38.100114025174,
+        "total_reward": -0.3880219557146447,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      }
+    },
+    {
+      "name": "b22b2f8cd715...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE22Big/b22b2f8cd715a71b4f7e40f90131d232af4a9b471bad1ea40c649c30f0d40d83.wcnf",
+      "source": "MSE22Big",
+      "n_clauses": 259,
+      "category": "INTERESTING",
+      "ppo": {
+        "initial_cost": 47.0,
+        "best_cost": 37.0,
+        "improvement": 10.0,
+        "improvement_pct": 21.27659574468085,
+        "total_reward": 0.9803468666502335,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 47.0,
+        "best_cost": 38.0,
+        "improvement": 9.0,
+        "improvement_pct": 19.148936170212767,
+        "total_reward": 0.10363693701080838,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      }
+    },
+    {
+      "name": "bbbfec68add4...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE22Big/bbbfec68add44ec61d293af96c7403f1caf48014946263ce6ce9e5dc16ffb274.wcnf",
+      "source": "MSE22Big",
+      "n_clauses": 281,
+      "category": "INTERESTING",
+      "ppo": {
+        "initial_cost": 40072563824.0,
+        "best_cost": 18039924337.0,
+        "improvement": 22032639487.0,
+        "improvement_pct": 54.98185637377251,
+        "total_reward": 0.5626905041021274,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 40072563824.0,
+        "best_cost": 18933401400.0,
+        "improvement": 21139162424.0,
+        "improvement_pct": 52.75220851065055,
+        "total_reward": -0.4192895235600296,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      }
+    },
+    {
+      "name": "c8640c8999c2...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE22Big/c8640c8999c259041698387f1709c24bcc2125e16074f7490d0f31935708982e.wcnf",
+      "source": "MSE22Big",
+      "n_clauses": 109,
+      "category": "INTERESTING",
+      "ppo": {
+        "initial_cost": 1.9744746936643332e+16,
+        "best_cost": 1.6906386530742218e+16,
+        "improvement": 2838360405901114.0,
+        "improvement_pct": 14.37526859680099,
+        "total_reward": -0.21586382877814517,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 1.9744746936643332e+16,
+        "best_cost": 1.7790009357250622e+16,
+        "improvement": 1954737579392710.0,
+        "improvement_pct": 9.90003865668699,
+        "total_reward": -0.44722159308369697,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      }
+    },
+    {
+      "name": "dd1b28cce2d0...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE22Big/dd1b28cce2d01251fe177a78adc5c45a9e1ce4e7362f75c6955109a12bea1d60.wcnf",
+      "source": "MSE22Big",
+      "n_clauses": 473,
+      "category": "TRIVIAL",
+      "ppo": {
+        "initial_cost": 1.0,
+        "best_cost": 0.0,
+        "improvement": 1.0,
+        "improvement_pct": 100.0,
+        "total_reward": 0.04,
+        "steps": 2,
+        "trivial": true,
+        "no_progress": false,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 1.0,
+        "best_cost": 0.0,
+        "improvement": 1.0,
+        "improvement_pct": 100.0,
+        "total_reward": 0.04,
+        "steps": 2,
+        "trivial": true,
+        "no_progress": false,
+        "error": null
+      }
+    },
+    {
+      "name": "f65971e5c5ff...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE22Big/f65971e5c5ff08d4965647b12c14e7e5c1c82debe75bca1cf688466d2e9f71a9.wcnf",
+      "source": "MSE22Big",
+      "n_clauses": 223,
+      "category": "INTERESTING",
+      "ppo": {
+        "initial_cost": 6.759010294247437e+16,
+        "best_cost": 8217497522471487.0,
+        "improvement": 5.937260542000288e+16,
+        "improvement_pct": 87.84215859315178,
+        "total_reward": 0.3843761070833951,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 6.759010294247437e+16,
+        "best_cost": 8562851750469469.0,
+        "improvement": 5.90272511920049e+16,
+        "improvement_pct": 87.33120475085343,
+        "total_reward": -0.34668622015744005,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      }
+    },
+    {
+      "name": "08d8aae243ff...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE23Big/08d8aae243ff1e367094a0cebd5979032471c226d38003cc7d99b362f0c2d296.wcnf",
+      "source": "MSE23Big",
+      "n_clauses": 117,
+      "category": "INTERESTING",
+      "ppo": {
+        "initial_cost": 47.0,
+        "best_cost": 42.0,
+        "improvement": 5.0,
+        "improvement_pct": 10.638297872340425,
+        "total_reward": -0.42158481440142787,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 47.0,
+        "best_cost": 42.0,
+        "improvement": 5.0,
+        "improvement_pct": 10.638297872340425,
+        "total_reward": -0.42158481440142787,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      }
+    },
+    {
+      "name": "1479eff736d8...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE23Big/1479eff736d88181a399f5597bb36ad3ac9e61955ab82ca6bf46a6c5b92d2f4b.wcnf",
+      "source": "MSE23Big",
+      "n_clauses": 122,
+      "category": "INTERESTING",
+      "ppo": {
+        "initial_cost": 51.0,
+        "best_cost": 46.0,
+        "improvement": 5.0,
+        "improvement_pct": 9.803921568627452,
+        "total_reward": -0.42441410247716543,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 51.0,
+        "best_cost": 46.0,
+        "improvement": 5.0,
+        "improvement_pct": 9.803921568627452,
+        "total_reward": -0.42441410247716543,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      }
+    },
+    {
+      "name": "24807cde25c8...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE23Big/24807cde25c81f9cc8e19c8ef270195524a31c2ac0edd44953c9f9483d2c1259.wcnf",
+      "source": "MSE23Big",
+      "n_clauses": 121,
+      "category": "INTERESTING",
+      "ppo": {
+        "initial_cost": 65.0,
+        "best_cost": 46.0,
+        "improvement": 19.0,
+        "improvement_pct": 29.230769230769234,
+        "total_reward": 0.05103463440812225,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 65.0,
+        "best_cost": 46.0,
+        "improvement": 19.0,
+        "improvement_pct": 29.230769230769234,
+        "total_reward": -0.368965365591878,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      }
+    },
+    {
+      "name": "335081df25da...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE23Big/335081df25da2f0f25a642de4a39e9eb54a46053b9e93420e5235da8ad0d2f58.wcnf",
+      "source": "MSE23Big",
+      "n_clauses": 116,
+      "category": "INTERESTING",
+      "ppo": {
+        "initial_cost": 59.0,
+        "best_cost": 46.0,
+        "improvement": 13.0,
+        "improvement_pct": 22.033898305084744,
+        "total_reward": 1.1096425036537503,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 59.0,
+        "best_cost": 46.0,
+        "improvement": 13.0,
+        "improvement_pct": 22.033898305084744,
+        "total_reward": 1.1096425036537503,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      }
+    },
+    {
+      "name": "4194e568bdd4...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE23Big/4194e568bdd40619b4ffc0ecd0de562fc9ef5a739e6d35bcad5bed36a7b0c17b.wcnf",
+      "source": "MSE23Big",
+      "n_clauses": 295,
+      "category": "INTERESTING",
+      "ppo": {
+        "initial_cost": 68.0,
+        "best_cost": 66.0,
+        "improvement": 2.0,
+        "improvement_pct": 2.941176470588235,
+        "total_reward": -0.20305310691302716,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 68.0,
+        "best_cost": 66.0,
+        "improvement": 2.0,
+        "improvement_pct": 2.941176470588235,
+        "total_reward": -0.4430531069130273,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      }
+    },
+    {
+      "name": "4a5109f62cc9...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE23Big/4a5109f62cc99c391cbebf269a2447a57ab9ab21bdbc1b2e794e2030ecb7f7b1.wcnf",
+      "source": "MSE23Big",
+      "n_clauses": 148,
+      "category": "NO_PROGRESS",
+      "ppo": {
+        "initial_cost": 40.0,
+        "best_cost": 40.0,
+        "improvement": 0.0,
+        "improvement_pct": 0.0,
+        "total_reward": -0.530986157725736,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": true,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 40.0,
+        "best_cost": 40.0,
+        "improvement": 0.0,
+        "improvement_pct": 0.0,
+        "total_reward": -0.5128254004860401,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": true,
+        "error": null
+      }
+    },
+    {
+      "name": "57b06ae86d3c...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE23Big/57b06ae86d3ca0ba8a62aa7e71042f43601e67d727e758049c18f92888768274.wcnf",
+      "source": "MSE23Big",
+      "n_clauses": 351,
+      "category": "NO_PROGRESS",
+      "ppo": {
+        "initial_cost": 74.0,
+        "best_cost": 74.0,
+        "improvement": 0.0,
+        "improvement_pct": 0.0,
+        "total_reward": -0.20000000000000032,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": true,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 74.0,
+        "best_cost": 74.0,
+        "improvement": 0.0,
+        "improvement_pct": 0.0,
+        "total_reward": -0.5000000000000002,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": true,
+        "error": null
+      }
+    },
+    {
+      "name": "6a3a62166274...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE23Big/6a3a621662747b0b0202e504626009ceb5ad67097be945164c016fbcc70cd652.wcnf",
+      "source": "MSE23Big",
+      "n_clauses": 116,
+      "category": "INTERESTING",
+      "ppo": {
+        "initial_cost": 1309912935.0,
+        "best_cost": 39.0,
+        "improvement": 1309912896.0,
+        "improvement_pct": 99.99999702270289,
+        "total_reward": 1.8742823964100166,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 1309912935.0,
+        "best_cost": 39.0,
+        "improvement": 1309912896.0,
+        "improvement_pct": 99.99999702270289,
+        "total_reward": 1.8742823964100166,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      }
+    },
+    {
+      "name": "806c0a53dab8...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE23Big/806c0a53dab8ef1b1651e79f61f32c572d69a413e48450e3154c5bf01a334b11.wcnf",
+      "source": "MSE23Big",
+      "n_clauses": 126,
+      "category": "TRIVIAL",
+      "ppo": {
+        "initial_cost": 1.0,
+        "best_cost": 0.0,
+        "improvement": 1.0,
+        "improvement_pct": 100.0,
+        "total_reward": -1.3700000000000003,
+        "steps": 50,
+        "trivial": true,
+        "no_progress": false,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 1.0,
+        "best_cost": 0.0,
+        "improvement": 1.0,
+        "improvement_pct": 100.0,
+        "total_reward": -1.1300000000000001,
+        "steps": 50,
+        "trivial": true,
+        "no_progress": false,
+        "error": null
+      }
+    },
+    {
+      "name": "92604e0a8985...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE23Big/92604e0a8985a88ffec567b50a5de79d64b5a56a3315d88de267cb8ab69f3f96.wcnf",
+      "source": "MSE23Big",
+      "n_clauses": 329,
+      "category": "TRIVIAL",
+      "ppo": {
+        "initial_cost": 1.0,
+        "best_cost": 0.0,
+        "improvement": 1.0,
+        "improvement_pct": 100.0,
+        "total_reward": -0.45821730569005714,
+        "steps": 50,
+        "trivial": true,
+        "no_progress": false,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 1.0,
+        "best_cost": 0.0,
+        "improvement": 1.0,
+        "improvement_pct": 100.0,
+        "total_reward": -1.0022967936548637,
+        "steps": 50,
+        "trivial": true,
+        "no_progress": false,
+        "error": null
+      }
+    },
+    {
+      "name": "a324a987f04a...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE23Big/a324a987f04af666ad38b8b75ec3bb5c94600f042a50fc8d2947ebb2c7590402.wcnf",
+      "source": "MSE23Big",
+      "n_clauses": 142,
+      "category": "INTERESTING",
+      "ppo": {
+        "initial_cost": 66.0,
+        "best_cost": 57.0,
+        "improvement": 9.0,
+        "improvement_pct": 13.636363636363635,
+        "total_reward": 0.3343068142910862,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 66.0,
+        "best_cost": 57.0,
+        "improvement": 9.0,
+        "improvement_pct": 13.636363636363635,
+        "total_reward": 0.18430681429108617,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      }
+    },
+    {
+      "name": "b92eabd0013c...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE23Big/b92eabd0013c7447a20094a03b093f2078b8333c6e32a78ae9e25161395033d2.wcnf",
+      "source": "MSE23Big",
+      "n_clauses": 166,
+      "category": "NO_PROGRESS",
+      "ppo": {
+        "initial_cost": 60.0,
+        "best_cost": 60.0,
+        "improvement": 0.0,
+        "improvement_pct": 0.0,
+        "total_reward": 0.9700000000000005,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": true,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 60.0,
+        "best_cost": 60.0,
+        "improvement": 0.0,
+        "improvement_pct": 0.0,
+        "total_reward": -0.4400000000000002,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": true,
+        "error": null
+      }
+    },
+    {
+      "name": "c4d3279a3ae9...",
+      "path": "e:/Dev/OpenExecution/research/projects/maxsat-dac/data/benchmarks/mse2024_regression/MSE23Big/c4d3279a3ae91ad6bd13f9339790d4c5bfe7c1915cccc796b26c26ea9781a85c.wcnf",
+      "source": "MSE23Big",
+      "n_clauses": 802,
+      "category": "INTERESTING",
+      "ppo": {
+        "initial_cost": 763269771.0,
+        "best_cost": 626156811.0,
+        "improvement": 137112960.0,
+        "improvement_pct": 17.96389234966833,
+        "total_reward": -0.39898910244396435,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      },
+      "random": {
+        "initial_cost": 763269771.0,
+        "best_cost": 660946811.0,
+        "improvement": 102322960.0,
+        "improvement_pct": 13.405870884411064,
+        "total_reward": -0.4039501623493629,
+        "steps": 50,
+        "trivial": false,
+        "no_progress": false,
+        "error": null
+      }
+    }
+  ],
+  "summary": {
+    "total_tested": 30,
+    "trivial": 5,
+    "no_progress": 4,
+    "interesting": 21,
+    "errors": 0,
+    "trivial_pct": 16.666666666666664,
+    "no_progress_pct": 13.333333333333334,
+    "ppo_mean": -2.6056888984064467e+17,
+    "random_mean": -2.601015206102997e+17,
+    "dac_benefit_count": 12,
+    "dac_benefit_pct": 57.14285714285714
+  }
+}

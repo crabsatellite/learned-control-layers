@@ -1,0 +1,32 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Compiled solver binaries (rebuild from source)
+*.exe
+*.obj
+*.o
+
+# Trained models (large binary files, regenerate via train_500k.py)
+data/results/ppo_*/
+data/results/scale_experiment/
+
+# Large external benchmarks (not included, see REPRODUCE.md)
+data/benchmarks/mse_industrial/
+data/benchmarks/mse2024_regression/
+data/benchmarks/mse2024_regression.zip
+data/benchmarks/split.json
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+.DS_Store
+
+# Logs
+logs/
+
+# TensorBoard
+tb_*/

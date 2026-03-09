@@ -1,0 +1,204 @@
+{
+  "metadata": {
+    "date": "2026-03-07T09:09:59.294018",
+    "seed": 42,
+    "max_steps": 50,
+    "solver_timeout": 10.0,
+    "checkpoint_interval": 1000,
+    "n_test_instances": 18,
+    "model_path": "./data/results/ppo_csolver_500k/model_seed42.zip",
+    "total_time_seconds": 2.825366258621216
+  },
+  "test_instances": [
+    "pt75_057.wcnf",
+    "v50_034.wcnf",
+    "v50_007.wcnf",
+    "v50_004.wcnf",
+    "v50_027.wcnf",
+    "v75_022.wcnf",
+    "v50_046.wcnf",
+    "v100_015.wcnf",
+    "v75_008.wcnf",
+    "pt75_061.wcnf",
+    "v100_017.wcnf",
+    "v100_016.wcnf",
+    "v75_025.wcnf",
+    "v50_029.wcnf",
+    "pt75_045.wcnf",
+    "v75_023.wcnf",
+    "pt75_009.wcnf",
+    "v100_011.wcnf"
+  ],
+  "schedules": {
+    "oracle_ppo_mimic": {
+      "description": "Mimics PPO trajectory: noise_prob=0.112/h_inc=0.1 for first 40%, then noise_prob=0/h_inc=9.63"
+    },
+    "oracle_linear": {
+      "description": "Linear: noise_prob 0.15->0, h_inc 0.1->10.0 over all steps"
+    },
+    "oracle_explore_exploit": {
+      "description": "50/50 split: h_inc=1/noise=0.15 then h_inc=5/noise=0"
+    },
+    "oracle_optimal_static": {
+      "description": "Best static from ablation: h_inc=3, smooth=0.05, noise=0.1, hwm=3"
+    }
+  },
+  "results": {
+    "oracle_ppo_mimic": {
+      "costs": [
+        260.0,
+        331.0,
+        185.0,
+        212.0,
+        205.0,
+        472.0,
+        184.0,
+        401.0,
+        263.0,
+        437.0,
+        433.0,
+        253.0,
+        438.0,
+        211.0,
+        261.0,
+        208.0,
+        321.0,
+        734.0
+      ],
+      "mean": 322.72222222222223,
+      "median": 262.0,
+      "std": 137.89803219752855,
+      "feasible": 18
+    },
+    "oracle_linear": {
+      "costs": [
+        260.0,
+        276.0,
+        185.0,
+        212.0,
+        205.0,
+        472.0,
+        184.0,
+        401.0,
+        263.0,
+        437.0,
+        433.0,
+        511.0,
+        431.0,
+        211.0,
+        261.0,
+        208.0,
+        321.0,
+        756.0
+      ],
+      "mean": 334.8333333333333,
+      "median": 269.5,
+      "std": 147.07566080082728,
+      "feasible": 18
+    },
+    "oracle_explore_exploit": {
+      "costs": [
+        260.0,
+        276.0,
+        185.0,
+        526.0,
+        205.0,
+        472.0,
+        184.0,
+        577.0,
+        263.0,
+        437.0,
+        433.0,
+        663.0,
+        460.0,
+        211.0,
+        261.0,
+        208.0,
+        321.0,
+        835.0
+      ],
+      "mean": 376.5,
+      "median": 298.5,
+      "std": 181.0000767341765,
+      "feasible": 18
+    },
+    "oracle_optimal_static": {
+      "costs": [
+        260.0,
+        331.0,
+        185.0,
+        526.0,
+        205.0,
+        472.0,
+        184.0,
+        641.0,
+        263.0,
+        437.0,
+        433.0,
+        749.0,
+        460.0,
+        211.0,
+        267.0,
+        208.0,
+        321.0,
+        886.0
+      ],
+      "mean": 391.05555555555554,
+      "median": 326.0,
+      "std": 198.92865058782095,
+      "feasible": 18
+    },
+    "ppo": {
+      "costs": [
+        260.0,
+        276.0,
+        185.0,
+        212.0,
+        205.0,
+        472.0,
+        184.0,
+        401.0,
+        263.0,
+        437.0,
+        433.0,
+        253.0,
+        438.0,
+        211.0,
+        261.0,
+        208.0,
+        321.0,
+        734.0
+      ],
+      "mean": 319.6666666666667,
+      "median": 262.0,
+      "std": 138.28955130450024,
+      "feasible": 18
+    },
+    "random": {
+      "costs": [
+        651.0,
+        359.0,
+        185.0,
+        526.0,
+        269.0,
+        472.0,
+        199.0,
+        534.0,
+        263.0,
+        437.0,
+        405.0,
+        952.0,
+        460.0,
+        211.0,
+        267.0,
+        208.0,
+        321.0,
+        930.0
+      ],
+      "mean": 424.94444444444446,
+      "median": 382.0,
+      "std": 223.87582674882327,
+      "feasible": 18
+    }
+  }
+}

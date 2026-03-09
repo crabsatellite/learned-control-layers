@@ -1,0 +1,47 @@
+{
+  "project": "maxsat-dac",
+  "solver": {
+    "name": "NuWLS",
+    "repo": "https://github.com/filyouzicha/NuWLS",
+    "compile_cmd": "gcc -O2 -o nuwls NuWLS.c -lm",
+    "binary": "data/solvers/nuwls",
+    "timeout_seconds": 60,
+    "checkpoint_interval_flips": 10000
+  },
+  "benchmarks": {
+    "source": "maxsat-evaluations.github.io",
+    "year": 2024,
+    "categories": ["weighted", "unweighted", "partial"],
+    "format": "wcnf",
+    "split": {
+      "train": 0.70,
+      "validation": 0.15,
+      "test": 0.15
+    }
+  },
+  "environment": {
+    "state_dim": 10,
+    "action_dim": 4,
+    "max_steps_per_episode": 100,
+    "reward_type": "cost_improvement",
+    "normalize_state": true
+  },
+  "training": {
+    "algorithm": "PPO",
+    "total_timesteps": 500000,
+    "n_envs": 4,
+    "learning_rate": 3e-4,
+    "batch_size": 64,
+    "n_epochs": 10,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "clip_range": 0.2,
+    "seed": 42
+  },
+  "evaluation": {
+    "cutoff_seconds": 60,
+    "n_runs": 5,
+    "metrics": ["solved", "objective", "par2"],
+    "statistical_tests": ["mcnemar", "wilcoxon"]
+  }
+}

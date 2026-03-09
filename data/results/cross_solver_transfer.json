@@ -1,0 +1,601 @@
+{
+  "metadata": {
+    "date": "2026-03-07T09:17:18.247028",
+    "model_path": "./data/results/ppo_csolver_500k/model_seed42.zip",
+    "checkpoint_interval": 1000,
+    "solver_timeout": 10,
+    "max_steps": 50,
+    "reward_type": "shaped",
+    "seed": 42,
+    "nuwls_binary": "./data/solvers/NuWLS/NuWLS-dac/nuwls-dac.exe",
+    "uswls_binary": "./data/solvers/USW-LS/USW-LS-dac/usw-ls-dac.exe",
+    "n_test_instances": 18,
+    "runtime_seconds": 3.821568489074707
+  },
+  "results": {
+    "NuWLS-DAC": {
+      "ppo": {
+        "results": [
+          {
+            "instance": "pt75_057.wcnf",
+            "best_cost": 0.0,
+            "steps": 1
+          },
+          {
+            "instance": "v50_034.wcnf",
+            "best_cost": 276.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_007.wcnf",
+            "best_cost": 185.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_004.wcnf",
+            "best_cost": 212.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_027.wcnf",
+            "best_cost": 205.0,
+            "steps": 50
+          },
+          {
+            "instance": "v75_022.wcnf",
+            "best_cost": 472.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_046.wcnf",
+            "best_cost": 184.0,
+            "steps": 50
+          },
+          {
+            "instance": "v100_015.wcnf",
+            "best_cost": 401.0,
+            "steps": 50
+          },
+          {
+            "instance": "v75_008.wcnf",
+            "best_cost": 263.0,
+            "steps": 50
+          },
+          {
+            "instance": "pt75_061.wcnf",
+            "best_cost": 0.0,
+            "steps": 1
+          },
+          {
+            "instance": "v100_017.wcnf",
+            "best_cost": 433.0,
+            "steps": 50
+          },
+          {
+            "instance": "v100_016.wcnf",
+            "best_cost": 253.0,
+            "steps": 50
+          },
+          {
+            "instance": "v75_025.wcnf",
+            "best_cost": 438.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_029.wcnf",
+            "best_cost": 211.0,
+            "steps": 50
+          },
+          {
+            "instance": "pt75_045.wcnf",
+            "best_cost": 0.0,
+            "steps": 1
+          },
+          {
+            "instance": "v75_023.wcnf",
+            "best_cost": 208.0,
+            "steps": 50
+          },
+          {
+            "instance": "pt75_009.wcnf",
+            "best_cost": 0.0,
+            "steps": 1
+          },
+          {
+            "instance": "v100_011.wcnf",
+            "best_cost": 734.0,
+            "steps": 50
+          }
+        ],
+        "mean_cost": 248.61111111111111
+      },
+      "random": {
+        "results": [
+          {
+            "instance": "pt75_057.wcnf",
+            "best_cost": 0.0,
+            "steps": 1
+          },
+          {
+            "instance": "v50_034.wcnf",
+            "best_cost": 440.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_007.wcnf",
+            "best_cost": 185.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_004.wcnf",
+            "best_cost": 526.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_027.wcnf",
+            "best_cost": 269.0,
+            "steps": 50
+          },
+          {
+            "instance": "v75_022.wcnf",
+            "best_cost": 472.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_046.wcnf",
+            "best_cost": 341.0,
+            "steps": 50
+          },
+          {
+            "instance": "v100_015.wcnf",
+            "best_cost": 699.0,
+            "steps": 50
+          },
+          {
+            "instance": "v75_008.wcnf",
+            "best_cost": 263.0,
+            "steps": 50
+          },
+          {
+            "instance": "pt75_061.wcnf",
+            "best_cost": 0.0,
+            "steps": 1
+          },
+          {
+            "instance": "v100_017.wcnf",
+            "best_cost": 433.0,
+            "steps": 50
+          },
+          {
+            "instance": "v100_016.wcnf",
+            "best_cost": 876.0,
+            "steps": 50
+          },
+          {
+            "instance": "v75_025.wcnf",
+            "best_cost": 460.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_029.wcnf",
+            "best_cost": 211.0,
+            "steps": 50
+          },
+          {
+            "instance": "pt75_045.wcnf",
+            "best_cost": 0.0,
+            "steps": 1
+          },
+          {
+            "instance": "v75_023.wcnf",
+            "best_cost": 208.0,
+            "steps": 50
+          },
+          {
+            "instance": "pt75_009.wcnf",
+            "best_cost": 0.0,
+            "steps": 1
+          },
+          {
+            "instance": "v100_011.wcnf",
+            "best_cost": 930.0,
+            "steps": 50
+          }
+        ],
+        "mean_cost": 350.72222222222223
+      },
+      "static_default": {
+        "results": [
+          {
+            "instance": "pt75_057.wcnf",
+            "best_cost": 0.0,
+            "steps": 1
+          },
+          {
+            "instance": "v50_034.wcnf",
+            "best_cost": 440.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_007.wcnf",
+            "best_cost": 185.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_004.wcnf",
+            "best_cost": 526.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_027.wcnf",
+            "best_cost": 269.0,
+            "steps": 50
+          },
+          {
+            "instance": "v75_022.wcnf",
+            "best_cost": 472.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_046.wcnf",
+            "best_cost": 199.0,
+            "steps": 50
+          },
+          {
+            "instance": "v100_015.wcnf",
+            "best_cost": 577.0,
+            "steps": 50
+          },
+          {
+            "instance": "v75_008.wcnf",
+            "best_cost": 263.0,
+            "steps": 50
+          },
+          {
+            "instance": "pt75_061.wcnf",
+            "best_cost": 0.0,
+            "steps": 1
+          },
+          {
+            "instance": "v100_017.wcnf",
+            "best_cost": 433.0,
+            "steps": 50
+          },
+          {
+            "instance": "v100_016.wcnf",
+            "best_cost": 681.0,
+            "steps": 50
+          },
+          {
+            "instance": "v75_025.wcnf",
+            "best_cost": 460.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_029.wcnf",
+            "best_cost": 211.0,
+            "steps": 50
+          },
+          {
+            "instance": "pt75_045.wcnf",
+            "best_cost": 0.0,
+            "steps": 1
+          },
+          {
+            "instance": "v75_023.wcnf",
+            "best_cost": 243.0,
+            "steps": 50
+          },
+          {
+            "instance": "pt75_009.wcnf",
+            "best_cost": 0.0,
+            "steps": 1
+          },
+          {
+            "instance": "v100_011.wcnf",
+            "best_cost": 924.0,
+            "steps": 50
+          }
+        ],
+        "mean_cost": 326.8333333333333
+      }
+    },
+    "USW-LS-DAC": {
+      "ppo": {
+        "results": [
+          {
+            "instance": "pt75_057.wcnf",
+            "best_cost": 0.0,
+            "steps": 1
+          },
+          {
+            "instance": "v50_034.wcnf",
+            "best_cost": 276.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_007.wcnf",
+            "best_cost": 185.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_004.wcnf",
+            "best_cost": 526.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_027.wcnf",
+            "best_cost": 205.0,
+            "steps": 50
+          },
+          {
+            "instance": "v75_022.wcnf",
+            "best_cost": 472.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_046.wcnf",
+            "best_cost": 184.0,
+            "steps": 50
+          },
+          {
+            "instance": "v100_015.wcnf",
+            "best_cost": 747.0,
+            "steps": 50
+          },
+          {
+            "instance": "v75_008.wcnf",
+            "best_cost": 263.0,
+            "steps": 50
+          },
+          {
+            "instance": "pt75_061.wcnf",
+            "best_cost": 0.0,
+            "steps": 1
+          },
+          {
+            "instance": "v100_017.wcnf",
+            "best_cost": 433.0,
+            "steps": 50
+          },
+          {
+            "instance": "v100_016.wcnf",
+            "best_cost": 688.0,
+            "steps": 50
+          },
+          {
+            "instance": "v75_025.wcnf",
+            "best_cost": 460.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_029.wcnf",
+            "best_cost": 211.0,
+            "steps": 50
+          },
+          {
+            "instance": "pt75_045.wcnf",
+            "best_cost": 0.0,
+            "steps": 1
+          },
+          {
+            "instance": "v75_023.wcnf",
+            "best_cost": 208.0,
+            "steps": 50
+          },
+          {
+            "instance": "pt75_009.wcnf",
+            "best_cost": 0.0,
+            "steps": 1
+          },
+          {
+            "instance": "v100_011.wcnf",
+            "best_cost": 835.0,
+            "steps": 50
+          }
+        ],
+        "mean_cost": 316.27777777777777
+      },
+      "random": {
+        "results": [
+          {
+            "instance": "pt75_057.wcnf",
+            "best_cost": 0.0,
+            "steps": 1
+          },
+          {
+            "instance": "v50_034.wcnf",
+            "best_cost": 276.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_007.wcnf",
+            "best_cost": 185.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_004.wcnf",
+            "best_cost": 526.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_027.wcnf",
+            "best_cost": 205.0,
+            "steps": 50
+          },
+          {
+            "instance": "v75_022.wcnf",
+            "best_cost": 472.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_046.wcnf",
+            "best_cost": 184.0,
+            "steps": 50
+          },
+          {
+            "instance": "v100_015.wcnf",
+            "best_cost": 706.0,
+            "steps": 50
+          },
+          {
+            "instance": "v75_008.wcnf",
+            "best_cost": 263.0,
+            "steps": 50
+          },
+          {
+            "instance": "pt75_061.wcnf",
+            "best_cost": 0.0,
+            "steps": 1
+          },
+          {
+            "instance": "v100_017.wcnf",
+            "best_cost": 433.0,
+            "steps": 50
+          },
+          {
+            "instance": "v100_016.wcnf",
+            "best_cost": 569.0,
+            "steps": 50
+          },
+          {
+            "instance": "v75_025.wcnf",
+            "best_cost": 460.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_029.wcnf",
+            "best_cost": 211.0,
+            "steps": 50
+          },
+          {
+            "instance": "pt75_045.wcnf",
+            "best_cost": 0.0,
+            "steps": 1
+          },
+          {
+            "instance": "v75_023.wcnf",
+            "best_cost": 208.0,
+            "steps": 50
+          },
+          {
+            "instance": "pt75_009.wcnf",
+            "best_cost": 0.0,
+            "steps": 1
+          },
+          {
+            "instance": "v100_011.wcnf",
+            "best_cost": 835.0,
+            "steps": 50
+          }
+        ],
+        "mean_cost": 307.3888888888889
+      },
+      "static_default": {
+        "results": [
+          {
+            "instance": "pt75_057.wcnf",
+            "best_cost": 0.0,
+            "steps": 1
+          },
+          {
+            "instance": "v50_034.wcnf",
+            "best_cost": 276.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_007.wcnf",
+            "best_cost": 185.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_004.wcnf",
+            "best_cost": 526.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_027.wcnf",
+            "best_cost": 205.0,
+            "steps": 50
+          },
+          {
+            "instance": "v75_022.wcnf",
+            "best_cost": 472.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_046.wcnf",
+            "best_cost": 184.0,
+            "steps": 50
+          },
+          {
+            "instance": "v100_015.wcnf",
+            "best_cost": 794.0,
+            "steps": 50
+          },
+          {
+            "instance": "v75_008.wcnf",
+            "best_cost": 263.0,
+            "steps": 50
+          },
+          {
+            "instance": "pt75_061.wcnf",
+            "best_cost": 0.0,
+            "steps": 1
+          },
+          {
+            "instance": "v100_017.wcnf",
+            "best_cost": 433.0,
+            "steps": 50
+          },
+          {
+            "instance": "v100_016.wcnf",
+            "best_cost": 569.0,
+            "steps": 50
+          },
+          {
+            "instance": "v75_025.wcnf",
+            "best_cost": 460.0,
+            "steps": 50
+          },
+          {
+            "instance": "v50_029.wcnf",
+            "best_cost": 211.0,
+            "steps": 50
+          },
+          {
+            "instance": "pt75_045.wcnf",
+            "best_cost": 0.0,
+            "steps": 1
+          },
+          {
+            "instance": "v75_023.wcnf",
+            "best_cost": 208.0,
+            "steps": 50
+          },
+          {
+            "instance": "pt75_009.wcnf",
+            "best_cost": 0.0,
+            "steps": 1
+          },
+          {
+            "instance": "v100_011.wcnf",
+            "best_cost": 835.0,
+            "steps": 50
+          }
+        ],
+        "mean_cost": 312.27777777777777
+      }
+    }
+  },
+  "transfer_analysis": {
+    "usw_ppo_mean": 316.27777777777777,
+    "usw_random_mean": 307.3888888888889,
+    "usw_static_mean": 312.27777777777777,
+    "ppo_vs_random_improvement": -8.888888888888857,
+    "ppo_vs_static_improvement": -4.0,
+    "ppo_wins_vs_random": 16,
+    "ppo_wins_vs_static": 17,
+    "transfers": false
+  }
+}

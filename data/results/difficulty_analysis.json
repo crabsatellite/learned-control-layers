@@ -1,0 +1,513 @@
+{
+  "groups": {
+    "easy": {
+      "instance_indices": [
+        6,
+        13,
+        15,
+        4,
+        2,
+        1
+      ],
+      "difficulty_score_range": [
+        185.23809523809524,
+        330.14285714285717
+      ],
+      "difficulty_score_mean": 235.43650793650792,
+      "n_observations": 18,
+      "ppo_mean": 216.7,
+      "random_mean": 249.8,
+      "best_static_mean": 216.7,
+      "improvement_vs_random_pct": 13.2,
+      "improvement_vs_best_static_pct": 0.0,
+      "cohens_d_vs_random": 0.65,
+      "cohens_d_vs_best_static": 0.0,
+      "wilcoxon_ppo_vs_random": {
+        "statistic": 0.0,
+        "p_value": 0.005655335537214311,
+        "significant_005": true,
+        "n_nonzero_diffs": 8
+      },
+      "wilcoxon_ppo_vs_best_static": {
+        "statistic": null,
+        "p_value": null,
+        "significant_005": null,
+        "n_nonzero_diffs": 0
+      },
+      "ppo_wins_vs_random": "3/3 (ties: 3)",
+      "ppo_wins_vs_best_static": "0/0 (ties: 6)"
+    },
+    "medium": {
+      "instance_indices": [
+        14,
+        16,
+        0,
+        5,
+        3,
+        8
+      ],
+      "difficulty_score_range": [
+        376.6190476190476,
+        485.0
+      ],
+      "difficulty_score_mean": 421.8333333333333,
+      "n_observations": 18,
+      "ppo_mean": 347.5,
+      "random_mean": 479.8,
+      "best_static_mean": 351.6,
+      "improvement_vs_random_pct": 27.6,
+      "improvement_vs_best_static_pct": 1.2,
+      "cohens_d_vs_random": 1.107,
+      "cohens_d_vs_best_static": 0.038,
+      "wilcoxon_ppo_vs_random": {
+        "statistic": 0.0,
+        "p_value": 0.0011088607321185246,
+        "significant_005": true,
+        "n_nonzero_diffs": 12
+      },
+      "wilcoxon_ppo_vs_best_static": {
+        "statistic": 14.0,
+        "p_value": 0.5,
+        "significant_005": false,
+        "n_nonzero_diffs": 7
+      },
+      "ppo_wins_vs_random": "6/6 (ties: 0)",
+      "ppo_wins_vs_best_static": "2/3 (ties: 3)"
+    },
+    "hard": {
+      "instance_indices": [
+        10,
+        12,
+        9,
+        7,
+        11,
+        17
+      ],
+      "difficulty_score_range": [
+        517.1428571428571,
+        789.952380952381
+      ],
+      "difficulty_score_mean": 615.8015873015873,
+      "n_observations": 18,
+      "ppo_mean": 552.1,
+      "random_mean": 649.2,
+      "best_static_mean": 534.9,
+      "improvement_vs_random_pct": 15.0,
+      "improvement_vs_best_static_pct": -3.2,
+      "cohens_d_vs_random": 0.592,
+      "cohens_d_vs_best_static": -0.112,
+      "wilcoxon_ppo_vs_random": {
+        "statistic": 26.0,
+        "p_value": 0.04809851823139147,
+        "significant_005": true,
+        "n_nonzero_diffs": 14
+      },
+      "wilcoxon_ppo_vs_best_static": {
+        "statistic": 41.0,
+        "p_value": 0.37657618238295726,
+        "significant_005": false,
+        "n_nonzero_diffs": 13
+      },
+      "ppo_wins_vs_random": "4/5 (ties: 1)",
+      "ppo_wins_vs_best_static": "3/6 (ties: 0)"
+    }
+  },
+  "instance_details": {
+    "instance_6": {
+      "group": "easy",
+      "difficulty_score": 185.2,
+      "ppo_costs": [
+        184.0,
+        184.0,
+        154.0
+      ],
+      "ppo_mean": 174.0,
+      "random_costs": [
+        199.0,
+        345.0,
+        154.0
+      ],
+      "random_mean": 232.7,
+      "best_static_costs": [
+        184.0,
+        184.0,
+        154.0
+      ],
+      "best_static_mean": 174.0
+    },
+    "instance_13": {
+      "group": "easy",
+      "difficulty_score": 211.0,
+      "ppo_costs": [
+        211.0,
+        211.0,
+        211.0
+      ],
+      "ppo_mean": 211.0,
+      "random_costs": [
+        211.0,
+        211.0,
+        211.0
+      ],
+      "random_mean": 211.0,
+      "best_static_costs": [
+        211.0,
+        211.0,
+        211.0
+      ],
+      "best_static_mean": 211.0
+    },
+    "instance_15": {
+      "group": "easy",
+      "difficulty_score": 213.9,
+      "ppo_costs": [
+        208.0,
+        208.0,
+        208.0
+      ],
+      "ppo_mean": 208.0,
+      "random_costs": [
+        208.0,
+        208.0,
+        208.0
+      ],
+      "random_mean": 208.0,
+      "best_static_costs": [
+        208.0,
+        208.0,
+        208.0
+      ],
+      "best_static_mean": 208.0
+    },
+    "instance_4": {
+      "group": "easy",
+      "difficulty_score": 232.4,
+      "ppo_costs": [
+        205.0,
+        205.0,
+        205.0
+      ],
+      "ppo_mean": 205.0,
+      "random_costs": [
+        269.0,
+        269.0,
+        269.0
+      ],
+      "random_mean": 269.0,
+      "best_static_costs": [
+        205.0,
+        205.0,
+        205.0
+      ],
+      "best_static_mean": 205.0
+    },
+    "instance_2": {
+      "group": "easy",
+      "difficulty_score": 240.0,
+      "ppo_costs": [
+        185.0,
+        247.0,
+        247.0
+      ],
+      "ppo_mean": 226.3,
+      "random_costs": [
+        185.0,
+        247.0,
+        247.0
+      ],
+      "random_mean": 226.3,
+      "best_static_costs": [
+        185.0,
+        247.0,
+        247.0
+      ],
+      "best_static_mean": 226.3
+    },
+    "instance_1": {
+      "group": "easy",
+      "difficulty_score": 330.1,
+      "ppo_costs": [
+        276.0,
+        276.0,
+        276.0
+      ],
+      "ppo_mean": 276.0,
+      "random_costs": [
+        359.0,
+        365.0,
+        331.0
+      ],
+      "random_mean": 351.7,
+      "best_static_costs": [
+        276.0,
+        276.0,
+        276.0
+      ],
+      "best_static_mean": 276.0
+    },
+    "instance_14": {
+      "group": "medium",
+      "difficulty_score": 376.6,
+      "ppo_costs": [
+        261.0,
+        261.0,
+        261.0
+      ],
+      "ppo_mean": 261.0,
+      "random_costs": [
+        267.0,
+        599.0,
+        542.0
+      ],
+      "random_mean": 469.3,
+      "best_static_costs": [
+        261.0,
+        261.0,
+        261.0
+      ],
+      "best_static_mean": 261.0
+    },
+    "instance_16": {
+      "group": "medium",
+      "difficulty_score": 381.5,
+      "ppo_costs": [
+        321.0,
+        321.0,
+        321.0
+      ],
+      "ppo_mean": 321.0,
+      "random_costs": [
+        321.0,
+        321.0,
+        434.0
+      ],
+      "random_mean": 358.7,
+      "best_static_costs": [
+        321.0,
+        321.0,
+        321.0
+      ],
+      "best_static_mean": 321.0
+    },
+    "instance_0": {
+      "group": "medium",
+      "difficulty_score": 387.9,
+      "ppo_costs": [
+        260.0,
+        260.0,
+        260.0
+      ],
+      "ppo_mean": 260.0,
+      "random_costs": [
+        651.0,
+        634.0,
+        503.0
+      ],
+      "random_mean": 596.0,
+      "best_static_costs": [
+        260.0,
+        260.0,
+        260.0
+      ],
+      "best_static_mean": 260.0
+    },
+    "instance_5": {
+      "group": "medium",
+      "difficulty_score": 449.5,
+      "ppo_costs": [
+        472.0,
+        363.0,
+        366.0
+      ],
+      "ppo_mean": 400.3,
+      "random_costs": [
+        472.0,
+        429.0,
+        472.0
+      ],
+      "random_mean": 457.7,
+      "best_static_costs": [
+        472.0,
+        429.0,
+        472.0
+      ],
+      "best_static_mean": 457.7
+    },
+    "instance_3": {
+      "group": "medium",
+      "difficulty_score": 450.5,
+      "ppo_costs": [
+        212.0,
+        482.0,
+        425.0
+      ],
+      "ppo_mean": 373.0,
+      "random_costs": [
+        526.0,
+        482.0,
+        470.0
+      ],
+      "random_mean": 492.7,
+      "best_static_costs": [
+        526.0,
+        286.0,
+        365.0
+      ],
+      "best_static_mean": 392.3
+    },
+    "instance_8": {
+      "group": "medium",
+      "difficulty_score": 485.0,
+      "ppo_costs": [
+        263.0,
+        579.0,
+        567.0
+      ],
+      "ppo_mean": 469.7,
+      "random_costs": [
+        263.0,
+        683.0,
+        567.0
+      ],
+      "random_mean": 504.3,
+      "best_static_costs": [
+        263.0,
+        567.0,
+        422.0
+      ],
+      "best_static_mean": 417.3
+    },
+    "instance_10": {
+      "group": "hard",
+      "difficulty_score": 517.1,
+      "ppo_costs": [
+        433.0,
+        464.0,
+        380.0
+      ],
+      "ppo_mean": 425.7,
+      "random_costs": [
+        405.0,
+        641.0,
+        785.0
+      ],
+      "random_mean": 610.3,
+      "best_static_costs": [
+        433.0,
+        422.0,
+        464.0
+      ],
+      "best_static_mean": 439.7
+    },
+    "instance_12": {
+      "group": "hard",
+      "difficulty_score": 525.2,
+      "ppo_costs": [
+        438.0,
+        479.0,
+        479.0
+      ],
+      "ppo_mean": 465.3,
+      "random_costs": [
+        460.0,
+        701.0,
+        531.0
+      ],
+      "random_mean": 564.0,
+      "best_static_costs": [
+        460.0,
+        436.0,
+        479.0
+      ],
+      "best_static_mean": 458.3
+    },
+    "instance_9": {
+      "group": "hard",
+      "difficulty_score": 581.2,
+      "ppo_costs": [
+        437.0,
+        598.0,
+        643.0
+      ],
+      "ppo_mean": 559.3,
+      "random_costs": [
+        437.0,
+        598.0,
+        643.0
+      ],
+      "random_mean": 559.3,
+      "best_static_costs": [
+        437.0,
+        598.0,
+        577.0
+      ],
+      "best_static_mean": 537.3
+    },
+    "instance_7": {
+      "group": "hard",
+      "difficulty_score": 599.5,
+      "ppo_costs": [
+        401.0,
+        866.0,
+        794.0
+      ],
+      "ppo_mean": 687.0,
+      "random_costs": [
+        534.0,
+        583.0,
+        566.0
+      ],
+      "random_mean": 561.0,
+      "best_static_costs": [
+        534.0,
+        379.0,
+        384.0
+      ],
+      "best_static_mean": 432.3
+    },
+    "instance_11": {
+      "group": "hard",
+      "difficulty_score": 681.8,
+      "ppo_costs": [
+        253.0,
+        469.0,
+        569.0
+      ],
+      "ppo_mean": 430.3,
+      "random_costs": [
+        952.0,
+        834.0,
+        623.0
+      ],
+      "random_mean": 803.0,
+      "best_static_costs": [
+        497.0,
+        596.0,
+        623.0
+      ],
+      "best_static_mean": 572.0
+    },
+    "instance_17": {
+      "group": "hard",
+      "difficulty_score": 790.0,
+      "ppo_costs": [
+        734.0,
+        800.0,
+        700.0
+      ],
+      "ppo_mean": 744.7,
+      "random_costs": [
+        930.0,
+        763.0,
+        700.0
+      ],
+      "random_mean": 797.7,
+      "best_static_costs": [
+        886.0,
+        724.0,
+        700.0
+      ],
+      "best_static_mean": 770.0
+    }
+  }
+}

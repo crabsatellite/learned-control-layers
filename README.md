@@ -98,7 +98,7 @@ This creates a standard Gymnasium interface compatible with any RL algorithm fro
 *Learned Control Layers for MaxSAT Local Search*
 Alex Chengyu Li, 2026
 
-[![Zenodo](https://img.shields.io/badge/Preprint-Zenodo-blue?style=flat-square&logo=zenodo)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18924836.svg)](https://doi.org/10.5281/zenodo.18924836)
 
 ## Citation
 

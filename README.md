@@ -22,7 +22,7 @@ All results from 3 seeds × 18 test instances = 54 evaluation points. BO static 
 ## Repository Structure
 
 ```
-maxsat-dac/
+learned-control-layers/
 ├── src/
 │   ├── gym_env.py              # Gymnasium DAC environment
 │   ├── solver_wrapper.py       # NuWLS-DAC subprocess interface

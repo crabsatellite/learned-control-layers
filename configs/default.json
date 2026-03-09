@@ -1,5 +1,5 @@
 {
-  "project": "maxsat-dac",
+  "project": "learned-control-layers",
   "solver": {
     "name": "NuWLS",
     "repo": "https://github.com/filyouzicha/NuWLS",

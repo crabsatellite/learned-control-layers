@@ -49,6 +49,10 @@ learned-control-layers/
 
 ## Quick Start
 
+### Option A: Verify with pre-trained models (~5 minutes)
+
+Pre-trained PPO checkpoints are available in the [v1.0.0 release](https://github.com/crabsatellite/learned-control-layers/releases/tag/v1.0.0), enabling instant reproduction of all evaluation results without retraining.
+
 ```bash
 # 1. Install dependencies
 pip install -r requirements.txt
@@ -58,13 +62,29 @@ cd data/solvers/NuWLS/NuWLS-dac
 make              # Linux/Mac (g++)
 # or on Windows with MSVC:
 # cl.exe /O2 /EHsc pms.cpp /Fe:nuwls-dac.exe
+# or download the pre-compiled binary from the release
 cd ../../../..
 
-# 3. Train PPO (3 seeds × 500K steps, ~4 hours)
-python src/train_500k.py
+# 3. Download pre-trained models
+mkdir -p data/results/ppo_csolver_500k
+cd data/results/ppo_csolver_500k
+# Download model_seed{42,123,999}.zip from the release
+cd ../../..
 
-# 4. Run smoke test
-python src/smoke_test.py
+# 4. Reproduce Table 5 (main results)
+python src/train_500k.py
+```
+
+### Option B: Train from scratch (~4 hours)
+
+```bash
+pip install -r requirements.txt
+
+cd data/solvers/NuWLS/NuWLS-dac
+make && cd ../../../..
+
+python src/smoke_test.py          # verify solver works
+python src/train_500k.py          # train 3 seeds × 500K steps
 ```
 
 See [REPRODUCE.md](REPRODUCE.md) for detailed step-by-step instructions.

@@ -71,7 +71,7 @@ def main():
     print("Next steps:")
     print("  1. Compile NuWLS solver (check data/solvers/NuWLS/)")
     print("  2. Download benchmarks (python scripts/download_benchmarks.py)")
-    print("  3. Run baselines (python src/baseline_static.py)")
+    print("  3. Run smoke test (python src/smoke_test.py)")
     print("=" * 60)
 
 

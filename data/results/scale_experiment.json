@@ -1,28 +1,30 @@
 {
   "metadata": {
-    "date": "2026-03-07T09:49:03.419103",
-    "description": "Scale experiment: PPO 100K on v200/v500 + zero-shot transfer from 500K model",
+    "date": "2026-03-12T09:39:01.710647",
     "seed": 42,
     "timesteps": 100000,
     "checkpoint_interval": 1000,
-    "max_steps": 50
+    "max_steps": 50,
+    "sizes": [
+      200,
+      500
+    ],
+    "total_time_seconds": 241.0762481689453
   },
   "per_size": {
     "200": {
-      "size": 200,
+      "n_vars": 200,
       "timeout": 10.0,
-      "seed": 42,
-      "timesteps": 100000,
-      "train_time": 286.06581115722656,
+      "train_time": 112.32113432884216,
       "n_episodes": 2007,
       "ppo_costs": [
-        1152.0,
-        1136.0,
-        1585.0,
-        1327.0,
-        898.0
+        1237.0,
+        1032.0,
+        1212.0,
+        1328.0,
+        1038.0
       ],
-      "ppo_mean": 1219.6,
+      "ppo_mean": 1169.4,
       "random_costs": [
         1510.0,
         965.0,
@@ -31,34 +33,32 @@
         1231.0
       ],
       "random_mean": 1295.8,
-      "diff": 76.20000000000005,
-      "diff_pct": 5.880537119925918,
-      "mann_whitney_p": 0.27380952380952384,
-      "wilcoxon_p": 0.3125,
-      "transfer_costs": [
-        1154.0,
-        772.0,
-        1223.0,
-        1004.0,
-        755.0
-      ],
-      "transfer_mean": 981.6
+      "ppo_vs_random": {
+        "mean_a": 1169.4,
+        "mean_b": 1295.8,
+        "diff": 126.39999999999986,
+        "diff_pct": 9.754591757987335,
+        "mann_whitney_u": 7.0,
+        "mann_whitney_p": 0.15476190476190477,
+        "wilcoxon_stat": 2.0,
+        "wilcoxon_p": 0.09375,
+        "ttest_stat": -1.13757139043929,
+        "ttest_p": 0.28822053901610367
+      }
     },
     "500": {
-      "size": 500,
+      "n_vars": 500,
       "timeout": 30.0,
-      "seed": 42,
-      "timesteps": 100000,
-      "train_time": 169.56566190719604,
+      "train_time": 126.9897677898407,
       "n_episodes": 2007,
       "ppo_costs": [
-        3119.0,
+        3199.0,
         3327.0,
-        3153.0,
-        3315.0,
-        2357.0
+        2762.0,
+        3122.0,
+        3511.0
       ],
-      "ppo_mean": 3054.2,
+      "ppo_mean": 3184.2,
       "random_costs": [
         3172.0,
         3327.0,
@@ -67,34 +67,88 @@
         3692.0
       ],
       "random_mean": 3318.6,
-      "diff": 264.4000000000001,
-      "diff_pct": 7.9672150907009005,
-      "mann_whitney_p": 0.12457631929096341,
-      "wilcoxon_p": 0.3125,
-      "transfer_costs": [
+      "ppo_vs_random": {
+        "mean_a": 3184.2,
+        "mean_b": 3318.6,
+        "diff": 134.4000000000001,
+        "diff_pct": 4.049900560477313,
+        "mann_whitney_u": 9.5,
+        "mann_whitney_p": 0.3002009240484843,
+        "wilcoxon_stat": 3.0,
+        "wilcoxon_p": 0.3125,
+        "ttest_stat": -0.6028093891737567,
+        "ttest_p": 0.5633293318262191
+      }
+    }
+  },
+  "zero_shot_transfer": {
+    "200": {
+      "costs": [
+        1154.0,
+        772.0,
+        1223.0,
+        1004.0,
+        755.0
+      ],
+      "mean": 981.6,
+      "vs_random": {
+        "mean_a": 981.6,
+        "mean_b": 1295.8,
+        "diff": 314.19999999999993,
+        "diff_pct": 24.247569069300816,
+        "mann_whitney_u": 3.0,
+        "mann_whitney_p": 0.027777777777777776,
+        "wilcoxon_stat": 0.0,
+        "wilcoxon_p": 0.03125,
+        "ttest_stat": -2.3321468973911057,
+        "ttest_p": 0.04800054636040798
+      },
+      "vs_size_specific_ppo": {
+        "mean_a": 981.6,
+        "mean_b": 1169.4,
+        "diff": 187.80000000000007,
+        "diff_pct": 16.05951770138533,
+        "mann_whitney_u": 5.0,
+        "mann_whitney_p": 0.07539682539682539,
+        "wilcoxon_stat": 1.0,
+        "wilcoxon_p": 0.0625,
+        "ttest_stat": -1.6748494876549151,
+        "ttest_p": 0.13249491719106388
+      }
+    },
+    "500": {
+      "costs": [
         2082.0,
         2053.0,
         2148.0,
         2156.0,
         1946.0
       ],
-      "transfer_mean": 2077.0
-    }
-  },
-  "summary": {
-    "v200": {
-      "ppo_100k_mean": 1219.6,
-      "random_mean": 1295.8,
-      "transfer_500k_mean": 981.6,
-      "ppo_vs_random_pct": 5.880537119925918,
-      "mann_whitney_p": 0.27380952380952384
-    },
-    "v500": {
-      "ppo_100k_mean": 3054.2,
-      "random_mean": 3318.6,
-      "transfer_500k_mean": 2077.0,
-      "ppo_vs_random_pct": 7.9672150907009005,
-      "mann_whitney_p": 0.12457631929096341
+      "mean": 2077.0,
+      "vs_random": {
+        "mean_a": 2077.0,
+        "mean_b": 3318.6,
+        "diff": 1241.6,
+        "diff_pct": 37.413367082504664,
+        "mann_whitney_u": 0.0,
+        "mann_whitney_p": 0.003968253968253968,
+        "wilcoxon_stat": 0.0,
+        "wilcoxon_p": 0.03125,
+        "ttest_stat": -6.572619459006034,
+        "ttest_p": 0.00017429809717419542
+      },
+      "vs_size_specific_ppo": {
+        "mean_a": 2077.0,
+        "mean_b": 3184.2,
+        "diff": 1107.1999999999998,
+        "diff_pct": 34.77168519565353,
+        "mann_whitney_u": 0.0,
+        "mann_whitney_p": 0.003968253968253968,
+        "wilcoxon_stat": 0.0,
+        "wilcoxon_p": 0.03125,
+        "ttest_stat": -8.509690396079607,
+        "ttest_p": 2.792107332623508e-05
+      }
     }
   }
 }

@@ -2,13 +2,17 @@
 
 Step-by-step instructions to reproduce all results from the paper.
 
+Two paths are available:
+- **Fast path** (Stages 1–3 only, ~5 minutes): Download pre-trained models from the [v1.0.0 release](https://github.com/crabsatellite/learned-control-layers/releases/tag/v1.0.0) and skip training. All evaluation-based results (Tables 5, 6, 9, 10, 11, 13) reproduce with **zero deviation** from the paper.
+- **Full path** (all stages, ~6 hours): Train from scratch and reproduce every experiment end-to-end.
+
 ## Prerequisites
 
 - Python 3.10+
-- C++ compiler: g++ (Linux/Mac) or MSVC cl.exe (Windows)
+- C++ compiler: g++ (Linux/Mac) or MSVC cl.exe (Windows) — or use the pre-compiled binary from the release
 - 4+ CPU cores (i7-12700K used in paper)
-- ~4 hours total compute time for main results
-- ~2 hours additional for ablation/transfer experiments
+- ~5 minutes for evaluation-only reproduction (with pre-trained models)
+- ~4 hours for full training + ~2 hours for ablation/transfer experiments
 
 ```bash
 pip install -r requirements.txt
@@ -26,7 +30,13 @@ make
 cd ../../../..
 ```
 
-### Windows (MSVC)
+### Windows
+
+**Option 1 — Pre-compiled binary (recommended):**
+
+Download `nuwls-dac-win64.exe` from the [v1.0.0 release](https://github.com/crabsatellite/learned-control-layers/releases/tag/v1.0.0) and place it at `data/solvers/NuWLS/NuWLS-dac/nuwls-dac.exe`.
+
+**Option 2 — Compile with MSVC:**
 
 ```powershell
 # Open Developer Command Prompt or use Enter-VsDevShell
@@ -34,6 +44,8 @@ cd data\solvers\NuWLS\NuWLS-dac
 cl.exe /O2 /EHsc pms.cpp /Fe:nuwls-dac.exe
 cd ..\..\..\..
 ```
+
+> **Note**: MinGW/g++ on Windows may produce a non-functional binary. MSVC (`cl.exe`) is required for Windows compilation.
 
 Verify: `./data/solvers/NuWLS/NuWLS-dac/nuwls-dac` (or `.exe` on Windows) should print usage info.
 
@@ -65,15 +77,31 @@ python src/smoke_test.py
 
 This verifies the solver binary works, the DAC protocol functions, and the Gymnasium environment can run episodes.
 
-## Stage 4: Main Training (Table 5, ~4 hours)
+## Stage 4: Main Training (Table 5)
 
-Train 3 PPO models (seeds 42, 123, 999) for 500K timesteps each:
+### Option A: Use pre-trained models (~2 minutes)
+
+Download the three model files from the [v1.0.0 release](https://github.com/crabsatellite/learned-control-layers/releases/tag/v1.0.0) and place them in `data/results/ppo_csolver_500k/`:
+
+```bash
+mkdir -p data/results/ppo_csolver_500k
+cd data/results/ppo_csolver_500k
+# Download model_seed42.zip, model_seed123.zip, model_seed999.zip from:
+# https://github.com/crabsatellite/learned-control-layers/releases/tag/v1.0.0
+cd ../../..
+
+python src/train_500k.py   # detects existing models, runs evaluation only
+```
+
+With pre-trained models, all evaluation results reproduce with **zero deviation** from the paper.
+
+### Option B: Train from scratch (~4 hours)
 
 ```bash
 python src/train_500k.py
 ```
 
-This produces:
+This trains 3 PPO models (seeds 42, 123, 999) for 500K timesteps each and produces:
 - Trained models in `data/results/ppo_csolver_500k/`
 - Multi-seed evaluation results in `data/results/csolver_500k_multiseed.json`
 
